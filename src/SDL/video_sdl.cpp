@@ -41,6 +41,7 @@
  */
 
 #include "sysdeps.h"
+#define USE_CPU_EMUL_SERVICES
 
 #include <SDL.h>
 #include <SDL_mutex.h>
@@ -1394,6 +1395,7 @@ void VideoInterrupt(void)
 {
 	// We must fill in the events queue in the same thread that did call SDL_SetVideoMode()
 	SDL_PumpEvents();
+    VideoRefresh();
 
 	// Emergency quit requested? Then quit
 	if (emerg_quit)
