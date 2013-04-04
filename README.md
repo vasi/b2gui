@@ -1,5 +1,9 @@
 *Downloads are now available here*: http://sourceforge.net/projects/b2gui/files/2011-11/
 
+**This repository is obsolete, please see https://github.com/vasi/macemu/tree/b2gui**
+
+<br/><br/>
+
 Building an Intel-Mac-friendly BasiliskII GUI.
 
 * Create a user `gtk`. As this user:
